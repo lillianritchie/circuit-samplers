@@ -1,0 +1,45 @@
+body{
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.7;
+    color: $color-black;
+}
+
+//front page headers
+
+.heading-primary{
+   
+    text-align: center; 
+    padding: 3vw;
+    height: 50vh;
+    
+    &--main{
+        font-family: 'Hepta Slab', 'Nunito Sans','Courier New', Courier, monospace;
+        font-size: 7rem;
+        color: $color-blue-dark;
+    }
+
+    &--sub{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 1.6rem;
+        color: $color-blue-medium;
+    }
+}
+
+//content page headers
+.content-heading{
+    font-family: 'Hepta Slab', 'Nunito Sans','Courier New', Courier, monospace;
+    font-size: 3rem;
+    padding: 4rem;
+
+    &__dark{
+        background-color: $color-blue-dark;
+        color: $color-blue-light;
+    }
+
+    &__light{
+        background-color: $color-blue-light;
+        color: $color-blue-dark
+    }
+
+}
+
