@@ -1,3 +1,5 @@
+//content body sections
+
 .content-body {
     margin: 2rem;
     padding: 10rem 10rem 14rem 9rem;
@@ -9,3 +11,30 @@
     }
 
 }
+
+//content page headers
+.content-heading {
+    font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    padding: 4rem 8rem;
+    line-height: 1.5;
+    font-weight: lighter;
+
+    &__dark {
+        background-color: $color-blue-dark;
+        color: $color-blue-light;
+    }
+
+    &__light {
+        background-color: $color-blue-light;
+        color: $color-blue-dark
+    }
+
+}
+
+//sticky elements
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%
+  }

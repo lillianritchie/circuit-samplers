@@ -95,6 +95,24 @@ li.bullet__sub {
   .content-body__text {
     margin-bottom: 2rem; }
 
+.content-heading {
+  font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  padding: 4rem 8rem;
+  line-height: 1.5;
+  font-weight: lighter; }
+  .content-heading__dark {
+    background-color: #001F7D;
+    color: #8BA9FF; }
+  .content-heading__light {
+    background-color: #8BA9FF;
+    color: #001F7D; }
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%; }
+
 .homepage {
   display: flex;
   flex-direction: row;
