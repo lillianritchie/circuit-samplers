@@ -52,16 +52,114 @@
       <h2 class="content-heading">Understanding Circuits</h2>
     </header>
     <div class="content-body">
-      <h3 class="heading-body">Understanding Electricity</h3>
-      <p class="content-body__text">
-        <span class="bold">Electricity</span> is the flow of electrical energy in one direction through a conductive material.
-      </p>
-      <p class="content-body__text">
-        You might remember from high school science that atoms are made up of neutral particles (Neutrons), positively
-        charged particles (Protons) and negatively charged particles (Electrons). Because Protons and Neutrons are both
-        significantly heavier than electrons, they can’t move from atom to atom, so when we talk about the flow of
-        electricity, we’re talking about the movement of electrons between atoms.
-      </p>
+      <div id="understanding_electricity">
+        <h3 class="heading-body">Understanding Electricity</h3>
+        <p class="content-body__text">
+          <span class="bold">Electricity</span> is the flow of electrical energy in one direction through a conductive
+          material.
+        </p>
+        <p class="content-body__text">
+          You might remember from high school science that atoms are made up of neutral particles (Neutrons), positively
+          charged particles (Protons) and negatively charged particles (Electrons). Because Protons and Neutrons are
+          both
+          significantly heavier than electrons, they can’t move from atom to atom, so when we talk about the flow of
+          electricity, we’re talking about the movement of electrons between atoms.
+        </p>
+      </div>
+      <div id="understanding_circuits">
+        <h3 class="heading-body">Understanding Circuits</h3>
+        <p class="content-body__text">
+          A <span class="bold">circuit</span> is a closed loop containing a source of electrical energy (our <span
+            class="bold">3V battery </span>) and a <span class="bold">load</span> (our <span class="bold">LEDs</span>)
+          which converts the energy to another form, such as light, heat, or motion. In a working circuit, all the
+          energy from the power source will be used up by the loads. If the power in a circuit is not used up, it’s a
+          <span class="bold">short circuit</span>.
+          In a short circuit, the electrical energy will flow back to its source, which can cause irreversible damage to
+          your battery.
+        </p>
+
+        <h4 class="heading-body__sub">Helpful Terms</h4>
+        <p class="content-body__text">Here are some terms it’s helpful to understand when talking about electricity:</p>
+        <p class="content-body__text"><span class="bold">Conductors</span> are materials like metals which allow for a
+          free flow of electricity.
+          Some examples of common conductive materials:
+        </p>
+        <ul class="conductor-list">
+          <li>Copper Wires</li>
+          <li>Aluminum Foil</li>
+          <li>Steel Wool</li>
+          <li>Water</li>
+          <li><span class="bold">Conductive Thread</span> This is the material we'll be using in our circuits. It's made
+            primarily of finely spun steel!</li>
+        </ul>
+        <p class="content-body__text">
+          <span class="bold">Current</span> is the term we use to refer to the amount of electricity flowing through a
+          conductive material.
+        </p>
+        <p class="content-body__text">
+          <span class="bold">Voltage</span> is the “push” behind an electrical current. For instance, in this project
+          we’re using a 3 Volt battery, so that’s the measurement of the amount of electricity being pushed through our
+          circuit and getting converted into light energy by the LEDs.
+        </p>
+        <p class="content-body__text">
+          <span class="bold">Insulators</span> are materials that do not allow electricity to flow through them. Good
+          examples of insulating materials are:
+        </p>
+        <ul class="insulator-list">
+          <li>Glass</li>
+          <li>Plastic</li>
+          <li>Rubber</li>
+        </ul>
+        <p class="content-body__text">
+          In regular electronic circuits, wires are usually coated with plastic to protect the user and prevent the loss
+          of current. The conductive thread we’re using does not have any protective coating but that’s okay! Why?
+        </p>
+        <ul class="insulator-why content-body__text">
+          <li>
+            We’re working with a very low voltage, so any electricity you come into contact with won’t be strong enough
+            to hurt you.
+          </li>
+          <li>There will likely be a slight loss of current over the circuit, but since the electricity only needs to
+            travel a few inches, it will be minimal enough that it won’t affect the circuit.</li>
+        </ul>
+
+        <p class="content-body__text">
+          <span class="bold">Resistors</span> slow down, but don’t totally block the flow of electricity. Some of the
+          electricity is able to move through this material, but the current will be reduced as the energy moves through
+          this material. Resistors are useful to reduce the amount of current flowing into a load like an LED to an
+          amount that the LED can handle without heating up and blowing out. If we were building normal electronics
+          circuits, we’d have to include resistors but one of the great features of sewable LEDs is they have tiny
+          resistors built in, so that step is done for us!
+        </p>
+      </div>
+
+      <div class="series-v-parallel">
+        <h4 class="heading-body__sub">Series v Parallel</h4>
+        <p class="content-body__text">
+          There are two ways to power LEDs in a circuit, and they behave in different ways. The first way we’ll look at
+          is called in <span class="bold">series</span>
+        </p>
+        <img src="../assets/LED-in-sequence.png" width=500px />
+        <p class="content-body__text">When you connect LEDs together in a single line like this, it’s called “in
+          series”. What happens in this kind of a circuit is that the full range of power flows through one LED at a
+          time, and the LED takes the full amount of power it can possibly convert into light before passing current on
+          to the next light. The drawback here, is that if your power source doesn’t have enough voltage, the lights
+          further out in your circuit won’t be as bright.</p>
+
+        <p class="content-body__text">
+          The form of circuit we’ll be using in this project is called <span class="bold">in parallel</span> and the
+          circuit will look something like this:
+        </p>
+
+        <img src="../assets/LED-in-parallel.png" width=510px />
+
+        <p>When you sew LEDs together in a circuit like this, the power flows evenly through all the LEDs before
+          returning to ground on your power source. As a result, even if the lights glow more dimly, they will all glow
+          evenly. (An added perk of sewing lights in parallel is that if one light goes out, the others stay working)
+        </p>
+
+      </div>
+
     </div>
   </section>
 

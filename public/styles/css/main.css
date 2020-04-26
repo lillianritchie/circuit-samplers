@@ -18,7 +18,7 @@ body {
   padding: 3vw;
   height: 50vh; }
   .heading-primary--main {
-    font-family: 'Hepta Slab', 'Nunito Sans','Courier New', Courier, monospace;
+    font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
     font-size: 7rem;
     color: #001F7D; }
   .heading-primary--sub {
@@ -27,7 +27,7 @@ body {
     color: #4F7BFF; }
 
 .content-heading {
-  font-family: 'Hepta Slab', 'Nunito Sans','Courier New', Courier, monospace;
+  font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
   font-size: 3rem;
   padding: 4rem 8rem;
   line-height: 1.5;
@@ -45,6 +45,10 @@ body {
   font-weight: 600;
   color: #4F7BFF;
   margin-bottom: 2rem; }
+  .heading-body__sub {
+    font-size: 2rem;
+    font-family: 'Nunito Sans', 'Montserrat', sans-serif;
+    color: #001F7D; }
 
 ul {
   list-style: none;
@@ -84,8 +88,8 @@ li.bullet__sub {
   margin: 3rem; }
 
 .content-body {
-  margin: 1rem;
-  padding: 7rem 7rem 10rem 7rem;
+  margin: 2rem;
+  padding: 10rem 10rem 14rem 9rem;
   background-color: #F2F2F2;
   font-size: 1.6rem; }
   .content-body__text {

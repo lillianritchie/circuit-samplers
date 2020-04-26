@@ -1,4 +1,4 @@
-body{
+body {
     font-family: "Montserrat", sans-serif;
     line-height: 2;
     color: $color-black;
@@ -6,19 +6,19 @@ body{
 
 //front page headers
 
-.heading-primary{
-   
-    text-align: center; 
+.heading-primary {
+
+    text-align: center;
     padding: 3vw;
     height: 50vh;
-    
-    &--main{
-        font-family: 'Hepta Slab', 'Nunito Sans','Courier New', Courier, monospace;
+
+    &--main {
+        font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
         font-size: 7rem;
         color: $color-blue-dark;
     }
 
-    &--sub{
+    &--sub {
         font-family: 'Nunito Sans', sans-serif;
         font-size: 1.6rem;
         color: $color-blue-medium;
@@ -26,19 +26,19 @@ body{
 }
 
 //content page headers
-.content-heading{
-    font-family: 'Hepta Slab', 'Nunito Sans','Courier New', Courier, monospace;
+.content-heading {
+    font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
     font-size: 3rem;
     padding: 4rem 8rem;
     line-height: 1.5;
     font-weight: lighter;
 
-    &__dark{
+    &__dark {
         background-color: $color-blue-dark;
         color: $color-blue-light;
     }
 
-    &__light{
+    &__light {
         background-color: $color-blue-light;
         color: $color-blue-dark
     }
@@ -46,46 +46,52 @@ body{
 }
 
 //headers within content blocks
-.heading-body{
+.heading-body {
     font-family: 'Nunito Sans', 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 600;
     color: $color-blue-medium;
     margin-bottom: 2rem;
 
+    &__sub {
+        font-size: 2rem;
+        font-family: 'Nunito Sans', 'Montserrat', sans-serif;
+        color: $color-blue-dark;
+       
+    }
 }
 
 //rules for bullet lists
-ul{
+ul {
     list-style: none;
     list-style-position: inside;
 }
 
 li::before {
-    content:"\2022";
+    content: "\2022";
     color: $color-yellow;
     font-size: 4rem;
     line-height: 0.2;
     font-weight: bold;
     display: inline-block;
     width: 4rem;
-    
+
     list-style: round;
     margin: 0.5rem 0rem 0rem 1rem;
-    
+
 }
 
-li.bullet__sub{
+li.bullet__sub {
     margin-left: 6rem;
 }
 
-.subtext{
+.subtext {
     font-size: 1.4rem;
     font-style: italic;
 }
 
 //highlighted words
-.bold{
+.bold {
     color: $color-blue-medium;
     font-weight: 600;
 }
