@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
-  line-height: 1.7;
+  line-height: 2;
   color: #383D45; }
 
 .heading-primary {
@@ -29,13 +29,48 @@ body {
 .content-heading {
   font-family: 'Hepta Slab', 'Nunito Sans','Courier New', Courier, monospace;
   font-size: 3rem;
-  padding: 4rem; }
+  padding: 4rem 8rem;
+  line-height: 1.5;
+  font-weight: lighter; }
   .content-heading__dark {
     background-color: #001F7D;
     color: #8BA9FF; }
   .content-heading__light {
     background-color: #8BA9FF;
     color: #001F7D; }
+
+.heading-body {
+  font-family: 'Nunito Sans', 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4F7BFF;
+  margin-bottom: 2rem; }
+
+ul {
+  list-style: none;
+  list-style-position: inside; }
+
+li::before {
+  content: "\2022";
+  color: #FFCE4F;
+  font-size: 4rem;
+  line-height: 0.2;
+  font-weight: bold;
+  display: inline-block;
+  width: 4rem;
+  list-style: round;
+  margin: 0.5rem 0rem 0rem 1rem; }
+
+li.bullet__sub {
+  margin-left: 6rem; }
+
+.subtext {
+  font-size: 1.4rem;
+  font-style: italic; }
+
+.bold {
+  color: #4F7BFF;
+  font-weight: 600; }
 
 .button__featured {
   background-color: #FFCE4F;
@@ -50,9 +85,11 @@ body {
 
 .content-body {
   margin: 1rem;
-  padding: 4rem;
+  padding: 7rem 7rem 10rem 7rem;
   background-color: #F2F2F2;
   font-size: 1.6rem; }
+  .content-body__text {
+    margin-bottom: 2rem; }
 
 .homepage {
   display: flex;
