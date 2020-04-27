@@ -1,18 +1,29 @@
-.homepage{
+.homepage__main{
     display: flex;
     flex-direction: row;
     text-align: center;
 
-    &__button{
-        width: 30%;
-    }
-
-    &__main{
-        width:40%;
-    }
     @media screen and (max-width: 700px){
         display: inline;
         justify-content: center;
 
     }
+}
+
+.homepage{
+
+    background-image: url('../../assets/home-bg.jpg');
+    background-color: $color-grey-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
+    &__button{
+        width: 30%;
+    }
+
+    &__center{
+        width:40%;
+    }
+ 
 }

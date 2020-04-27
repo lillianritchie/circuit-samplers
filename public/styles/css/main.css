@@ -26,19 +26,6 @@ body {
     font-size: 1.6rem;
     color: #4F7BFF; }
 
-.content-heading {
-  font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
-  font-size: 3rem;
-  padding: 4rem 8rem;
-  line-height: 1.5;
-  font-weight: lighter; }
-  .content-heading__dark {
-    background-color: #001F7D;
-    color: #8BA9FF; }
-  .content-heading__light {
-    background-color: #8BA9FF;
-    color: #001F7D; }
-
 .heading-body {
   font-family: 'Nunito Sans', 'Montserrat', sans-serif;
   font-size: 2.5rem;
@@ -113,15 +100,21 @@ li.bullet__sub {
   top: 0;
   width: 100%; }
 
-.homepage {
+.homepage__main {
   display: flex;
   flex-direction: row;
   text-align: center; }
-  .homepage__button {
-    width: 30%; }
-  .homepage__main {
-    width: 40%; }
   @media screen and (max-width: 700px) {
-    .homepage {
+    .homepage__main {
       display: inline;
       justify-content: center; } }
+
+.homepage {
+  background-image: url("../../assets/home-bg.jpg");
+  background-color: #F2F2F2;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .homepage__button {
+    width: 30%; }
+  .homepage__center {
+    width: 40%; }
