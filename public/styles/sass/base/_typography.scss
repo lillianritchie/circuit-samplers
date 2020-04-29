@@ -46,14 +46,14 @@ body {
 //rules for bullet lists
 ul {
     list-style: none;
-    list-style-position: inside;
+    list-style-position: outside;
 }
 
 li::before {
     content: "\2022";
     color: $color-yellow;
     font-size: 4rem;
-    line-height: 0.2;
+    line-height: 1.5rem;
     font-weight: bold;
     display: inline-block;
     width: 4rem;
