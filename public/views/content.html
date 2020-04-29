@@ -18,10 +18,11 @@
 
   <!-- section covering the supply list -->
   <section id="supplies" class="content">
-    <header class="content-heading__dark sticky" >
+    <header class="content-heading__dark sticky">
       <h2 class="content-heading">What You'll Need</h2>
     </header>
     <div class="content-body">
+      <!-- standard embroidery supplies -->
       <h3 class="heading-body">Standard Embroidery Supplies</h3>
       <ul class="supply-list">
         <li class="bullet__main">6" embroidery hoop</li>
@@ -42,6 +43,26 @@
             and could mess up your circuit!)</li>
         </ul>
       </ul>
+
+      <!-- electronics specific supplies -->
+      <h3 class="heading-body">E-Textiles Supplies</h3>
+      <p class="content-body__text">
+        These supplies may be unfamiliar to you or not already in your kit. I've included
+        links to help you purchase the correct items at sparkfun.com (the official sellers of lilypad sewing supplies).
+        There are other places you can find similar products online, but sparkfun are reliable, independent, and you can
+        get em all in one package!
+      </p>
+      <ul class="supply-list">
+        <li>1 Bobbin Conductive Thread <a class="buy-link" href="https://www.sparkfun.com/products/10867">buy here</a>
+        </li>
+        <li>5 White Sewable LEDs <a class="buy-link" href="https://www.sparkfun.com/products/13902">buy here</a></li>
+        <li>1 Sewable Coin Cell Battery Holder <a class="buy-link" href="https://www.sparkfun.com/products/13883">buy
+            here</a></li>
+        <li>1 3V Coin Cell Battery (20mm CR2032) <a a class="buy-link" href="https://www.sparkfun.com/products/338">buy
+            here</a></li>
+      </ul>
+
+
     </div>
   </section>
 
@@ -202,12 +223,129 @@
       </p>
     </div>
   </section>
-
+  <!-- pattern section -->
   <section class="content" id="start">
     <header class="content-heading__light sticky">
       <h2 class="content-heading">Start Stitching</h2>
+
     </header>
     <div class="content-body">
+
+      <h3 class="heading-body">Choose Your Astrology Pattern</h3>
+      <p class="content-body__text">Okay! Now that we’ve covered the basics, let’s get started. Choose the astrological
+        sign you want to stitch from the menu below.</p>
+
+      <!-- drop down menu -->
+
+      <!-- <label for="signs">Astrological Sign:</label> -->
+      <select name="astro-signs" class="drop-menu" id="signs">
+        <option value="aquarius">Aquarius</option>
+        <option value="pisces">Pisces</option>
+        <option value="aries">Aries</option>
+        <option value="taurus">Taurus</option>
+        <option value="gemini">Gemini</option>
+        <option value="cancer">Cancer</option>
+        <option value="leo">Leo</option>
+        <option value="virgo">Virgo</optioon>
+        <option value="libra">Libra</option>
+        <option value="scorpio">Scorpio</option>
+        <option value="saggitarius">Saggitarius</option>
+        <option value="capricorn">Capricorn</option>
+      </select>
+
+      <!-- circuit pattern instructions -->
+      <h3 class="heading-body">Layer 1: Stitching your Circuit</h3>
+      <!-- container for pattern image -->
+      <container class="pattern-image" id="pattern-1"></container>
+      <p class="content-body__text">
+        This first pattern layer represents the stitching for your circuit. The larger circle is your <span
+          class="bold">battery holder</span>,
+        and the small pill-shaped shapes are your <span class="bold">sewable LEDs</span>. Take a look at these
+        components in real life - you’ll
+        see that they’re all marked with tiny (<span class="bold">+</span>) and (<span class="bold">-</span>) symbols.
+        These will be your guides to making sure you’re
+        connecting everything correctly. The electrical current will flow from the <span class="bold">+</span>
+        connection points back around to
+        the <span class="bold">-</span> connection points on the battery.
+      </p>
+
+      <!-- circuit steps -->
+      <ul class="circuit-steps">
+        <li>
+          <span class="bold">Set up your Hoop</span> - This step is the same as what you’re already used to, Take the
+          Opaque Navy Fabric and secure it in your embroidery hoop so that it’s pulled taut.
+        </li>
+        <li>
+          <span class="bold">Copy the Pattern</span> - Using a pen or fabric pencil (DO NOT use graphite here!
+          Graphite is conductive and could break your circuit) mark out the placement for your components and stitch
+          lines.
+        </li>
+        <li>
+          <span class="bold">Connect your battery pack to the BACK of your sampler</span> - If you want to, you can
+          secure the battery holder in place with a drop of glue before you start sewing.
+        </li>
+        <li>
+          <span class="bold">Start Sewing Connections</span>
+          <ul class="circuit-steps__sub">
+            <li>
+              Using two strands of conductive thread, loop around either of the two (+) sew tabs that you see on the
+              battery in the diagram. Make sure to loop through the hole on the battery pack at least 3 times.
+            </li>
+            <li>
+              Using a running stitch, sew a straight connection to the first LED in the diagram, and connect it by
+              looping around the (+) sew tab at least 3 times.
+            </li>
+            <li>
+              Continue from this (+) sew tab, and stitch another straight running stitch to the next LED. Again, loop
+              around the sew tab 3 times.
+            </li>
+            <li>
+              Once you’ve reached the end of this line of LEDs, secure your connection with a small knot, and make sure
+              neither loose thread ends are touching any other parts of the circuit.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span class="bold">Repeat</span> - Take a new length of conductive thread and connect the (-) sew tab of the
+          battery in line with the (-) sew tabs on the LEDs. Don’t forget to loop around each connection a minimum of
+          three times.
+        </li>
+        <li>
+          <span class="bold">Test</span> - Once you’ve finished securing your connections, it’s time to test this half
+          of the circuit! Place a coin cell battery in your battery holder, and flip the switch to “on”. Are all your
+          lights working? If not, try checking for these common errors:
+          <ul class="circuit-steps__sub">
+            <li>
+              re your connections secure? Is the conductive thread laying flat on the metal portion of the sew tab?
+            </li>
+            <li>
+              Are your (+) and (-) connections properly lined up? Have you sewn any LEDs in facing the wrong direction?
+            </li>
+            <li>
+              Are any pieces of thread hanging loose? They could be touching other parts of the circuit and causing a
+              short.
+            </li>
+            <li>
+              Is your battery fully charged? Make sure you only place a battery in the holder when you’re ready to test.
+              If you accidentally short the circuit while working, you can fry your battery and will need to replace it.
+            </li>
+          </ul>
+        <li>
+          <span class="bold">Repeat Steps 3-6</span> on the other side of your circuit.
+        </li>
+        <li>
+          <span class="bold">Secure Loose Ends</span> - Secure any loose pieces of conductive thread with a small dab of
+          glue. (I like using tacky glue, but any kind of craft, fabric, or elmer’s will work. You can even use a small
+          dab of clear nail polish if you prefer.
+        </li>
+        
+      </ul>
+
+
+
+
+
+
 
     </div>
   </section>
