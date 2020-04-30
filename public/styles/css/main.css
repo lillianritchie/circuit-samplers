@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::after,
 *::before {
@@ -94,17 +95,53 @@ a {
   a:visited {
     color: #8BA9FF; }
 
-.drop-menu {
+.signs-menu {
   background-color: #FFCE4F;
   font-family: 'Nunito Sans', sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #001F7D;
+  color: #383D45;
   border: none;
   width: 300px;
   height: 50px;
   padding: 1rem;
   margin: 2rem 2rem 4rem 2rem; }
+
+.dropbtn {
+  cursor: pointer; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #FFCE4F;
+  border-radius: 0 0 5px 5px;
+  width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 2ß;
+  margin-top: 2.5rem; }
+
+.dropdown-content a {
+  color: #001F7D;
+  font-family: 'nunito sans', 'montserrat', sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: right; }
+
+.dropdown-content a:hover {
+  font-weight: 800;
+  font-size: 1.7rem; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.dropdown:hover .dropbtn {
+  background-color: #FFCE4F; }
 
 .content-body {
   margin: 2rem;
