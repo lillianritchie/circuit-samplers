@@ -72,7 +72,20 @@ li.bullet__sub {
   border: none;
   font-weight: 600;
   text-transform: uppercase;
-  margin: 3rem; }
+  margin: 3rem;
+  box-shadow: 16px 0 8px 0 rgba(56, 61, 69, 0.2);
+  transition: all 0.2s; }
+  .button__featured:hover {
+    box-shadow: 24px 0 16px 0 rgba(56, 61, 69, 0.2);
+    transform: translateY(-2px); }
+  .button__featured:active {
+    box-shadow: 4px 0 2px 0 rgba(56, 61, 69, 0.2);
+    transform: translateY(0); }
+
+a {
+  color: #4F7BFF; }
+  a:visited {
+    color: #8BA9FF; }
 
 .content-body {
   margin: 2rem;
