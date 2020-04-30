@@ -12,10 +12,6 @@
     box-shadow: 16px 0 8px 0 rgba($color-black, 0.2);
     transition: all 0.2s;
 
-    &__small {
-        height: 5rem;
-        width: 5rem;
-    }
 
 
 
@@ -31,6 +27,30 @@
     }
 
 
+}
+
+.button__small {
+   
+    background-color: $color-yellow;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100px;
+    border: none;
+    box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.4);
+    transition: all 0.2s;
+    margin: 4rem 5rem 1rem 1rem;
+
+
+    &:hover {
+        box-shadow: 10px 0 10px 0 rgba(0, 0, 0, 0.4);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 4px 0 2px 0 rgba(0, 0, 0, 0.4);
+        transform: translateY(0);
+
+    }
 }
 
 a {

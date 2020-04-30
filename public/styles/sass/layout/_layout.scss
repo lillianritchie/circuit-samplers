@@ -14,23 +14,38 @@
 
 //content page headers
 .content-heading {
+    display: flex;
+    flex-direction: row;
+
+    &__dark {
+        background-color: $color-blue-dark;
+        color: $color-blue-light;
+        display: flex;
+        flex-direction: row row-reverse;
+        box-shadow: 0 8px 8px 0 rgba($color-black, 0.3);
+    }
+
+    &__light {
+        background-color: $color-blue-light;
+        color: $color-blue-dark;
+        display: flex;
+        flex-direction: row row-reverse;
+        box-shadow: 0 8px 8px 0 rgba($color-black, 0.3);
+    }
+
+
+
+    &__text{
     font-family: 'Hepta Slab', 'Nunito Sans', 'Courier New', Courier, monospace;
     font-size: 3rem;
     padding: 4rem 8rem;
     line-height: 1.5;
     font-weight: lighter;
-    box-shadow: 0 8px 8px 0 rgba($color-black, 0.3);
+    width: 70%;
 
-    &__dark {
-        background-color: $color-blue-dark;
-        color: $color-blue-light;
     }
 
-    &__light {
-        background-color: $color-blue-light;
-        color: $color-blue-dark
-    }
-
+  
 }
 
 //sticky elements
