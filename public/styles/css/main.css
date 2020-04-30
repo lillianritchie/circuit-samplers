@@ -100,7 +100,8 @@ a {
   font-size: 3rem;
   padding: 4rem 8rem;
   line-height: 1.5;
-  font-weight: lighter; }
+  font-weight: lighter;
+  box-shadow: 0 8px 8px 0 rgba(56, 61, 69, 0.3); }
   .content-heading__dark {
     background-color: #001F7D;
     color: #8BA9FF; }

@@ -26,6 +26,10 @@ app.get("/start", (req, res) => {
   res.sendFile(path.resolve(__dirname + "/public/views/content.html"))
 });
 
+app.get("/get-pdf", (req,res) => {
+  res.sendFile(path.resolve(__dirname + "/public/assets/circuit-samplers.pdf"))
+});
+
 // Start listening
 app.listen(PORT, () => {
   console.log(`see the magic: http://localhost:${PORT}`);
