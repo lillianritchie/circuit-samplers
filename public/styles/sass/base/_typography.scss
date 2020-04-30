@@ -47,21 +47,11 @@ body {
 ul {
     list-style: none;
     list-style-position: outside;
+    list-style-image: url('../../assets/bullet.png');
+    margin:  2rem 2rem 4rem 1rem;
 }
 
-li::before {
-    content: "\2022";
-    color: $color-yellow;
-    font-size: 4rem;
-    line-height: 1.5rem;
-    font-weight: bold;
-    display: inline-block;
-    width: 4rem;
 
-    list-style: round;
-    margin: 0.5rem 0rem 0rem 1rem;
-
-}
 
 li.bullet__sub {
     margin-left: 6rem;
