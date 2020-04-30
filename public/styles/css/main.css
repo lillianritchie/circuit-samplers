@@ -75,6 +75,9 @@ li.bullet__sub {
   margin: 3rem;
   box-shadow: 16px 0 8px 0 rgba(56, 61, 69, 0.2);
   transition: all 0.2s; }
+  .button__featured__small {
+    height: 5rem;
+    width: 5rem; }
   .button__featured:hover {
     box-shadow: 24px 0 16px 0 rgba(56, 61, 69, 0.2);
     transform: translateY(-2px); }
