@@ -118,10 +118,12 @@ a {
   position: absolute;
   background-color: #FFCE4F;
   border-radius: 0 0 5px 5px;
-  width: 240px;
+  width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 0;
-  margin-top: 2.5rem; }
+  margin-top: 2.5rem;
+  transform: translateX(-150px);
+  padding: 1rem 2rem; }
 
 .dropdown-content a {
   color: #001F7D;
@@ -208,7 +210,7 @@ a {
   background-color: #c3c4c4;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: top; }
+  background-position: top center; }
   .homepage__button {
     width: 30%; }
   .homepage__center {
