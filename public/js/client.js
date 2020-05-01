@@ -27,7 +27,7 @@ function createPattern(input) {
 
 
 
-    $patternContainer1.innerHTML = `<img class="pattern-image" src="../../assets/${input}-layer-01.png"></img>`;
-    $patternContainer2.innerHTML = `<img class="pattern-image" src="../../assets/${input}-layer-02.png"></img>`;
+    $patternContainer1.innerHTML = `<img class="pattern-image" src="../../assets/${input}-layer-01.png" width="500px"></img>`;
+    $patternContainer2.innerHTML = `<img class="pattern-image" src="../../assets/${input}-layer-02.png" width="500px"></img>`;
 
 }
