@@ -12,10 +12,13 @@
 
 .homepage{
 
-    background-image: url('../../assets/home-bg.jpg');
-    background-color: $color-grey-light;
-    background-size: cover;
+    background-image: url('../../assets/background-img.jpg');
+    background-color: #c3c4c4;
+    background-size: 100%;
     background-repeat: no-repeat;
+    background-position: top center;
+
+    
 
     
     &__button{
